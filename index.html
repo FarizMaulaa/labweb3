@@ -9,11 +9,11 @@
   </head>
   <body>
     <header>
-      <h1>Membuat Form</h1>
+      <h1>Form Pendaftaran Mahasiswa Baru</h1>
     </header>
-    <form action="proses.php" method="post">
+    <form>
       <fieldset>
-        <legend>Data Pelanggan</legend>
+        <legend>Data Mahasiswa</legend>
         <p>
           <label for="nama">Nama</label>
           <input type="text" id="nama" name="nama" />
@@ -33,7 +33,20 @@
             >Perempuan</label
           >
         </p>
-        <p><input type="submit" value="Login" /></p>
+        <h4>Fakultas Teknik</h4>
+        <select>
+          <option value="teknikInfromatika">Teknik Informatika</option>
+          <option value="teknikIndustri">Teknik Industri</option>
+          <option value="TeknikLingkungan">Teknik Lingkungan</option>
+          <option value="teknikIndustri">Teknik Industri</option>
+        </select>
+        <p>
+          <input
+            type="submit"
+            value="Daftar"
+            onclick="alert('Selamat Anda Berhasil Mendaftar')"
+          />
+        </p>
       </fieldset>
     </form>
   </body>
